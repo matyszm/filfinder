@@ -1,3 +1,9 @@
+# Made by Mariusz Matyszewski
+# The Fil Painter is Copyright under
+# Apache License, Version 2.0
+# For terms of the license agreement
+# see https://github.com/matyszm/filfinder for more information
+
 import sys, argparse, os, pathlib, dataset
 from PyQt5 import QtCore, QtGui, QtWidgets
 import mrcfile

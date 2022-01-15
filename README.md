@@ -43,7 +43,7 @@ Machine Learning based Filament Finder for Leginon
 
 This is a Leginon plugin to help automate data collection on non-uniform samples, primarily filamentous complexes. Specifically, this was designed in mind for collecting data on LRRK2 filaments bound to microtubules using lacey grids rather than the usual UltrAuFoil or Quantifoil grids with equally spaced holes. This plug-in works on the hole level magnification, where it can select multiple imaging areas with filaments, as well as suggest an area to put down a focus target that contains enough carbon to properly focus.
 
-This is the code was used in the Microtubule... (Paper name here). While it can be adapted to work with other proteins or complexes, I will not be updating this particular repo with such updates. Instead, there will be a suite of tools released in the near future that will contain much more user-friendly tools to train such models and create custom Leginon plugins. I will update this repo with a link when that work is ready for release.
+This is the code was used in the "Structural basis for Parkinson’s Disease-linked LRRK2’s binding to microtubules" by Snead DM, Matyszewski M, Dickey AM et al. While it can be adapted to work with other proteins or complexes, I will not be updating this particular repo with such updates. Instead, there will be a suite of tools released in the near future that will contain much more user-friendly tools to train such models and create custom Leginon plugins. I will update this repo with a link when that work is ready for release.
 
 In addition, this plug-in was developed with the Talos Arctica in mind, which means our imaging beam has a fixed diameter and it will burn the sample near the chosen exposure area. To account for this, the plug-in will try to most efficiently choose imaging areas without imaging pre-exposed areas, while maximizing how many images it can take. While I make suggestion on how to modify the code to make it work better on the Titan Krios (which has no such beam size limitations), I was unable to test them.
 
@@ -123,7 +123,7 @@ Requires Python 3.7+ with these modules installed:
 </ul>
 Once again, I recommend a conda environment. Only mrcfile and dataset need to be installed with pip, the others are personal preference.
 
-Since you are training models, a GPU is recommended, but should work with CPUs as well (just slower). I was training this with a Nvidia 2060 6GB GPU, so nothing fancy is required. Keeping the models quick and reasonably sized was one of the core principles of this project.
+Since you are training models, a GPU is recommended, but should work with CPUs as well (just slower). I was training this with a Nvidia 2060 6GB GPU, so strong GPUs are not required to make this work. Keeping the models quick and reasonably sized was one of the core principles of this project.
 
 Training was done on Windows installation, but results should be the same when ran on Linux. Mac should work too, except no Nvidia support.
 
@@ -181,15 +181,6 @@ We used this plug-in with the <a href="https://emg.nysbc.org/redmine/projects/le
 Distributed under the Apache Ver 2 License. See `LICENSE` for more information.
 
 Parts of the code present in fil_picker.py are additionally licenced by Leginon. See https://emg.nysbc.org/redmine/projects/leginon for more information.
-
-<!-- CONTACT -->
-## Contact
-
-Mariusz Matyszewski - matyszm@gmail.com or mmatyszewski@ucsd.edu
-
-Project Link: [https://github.com/matyszm/filfinder](https://github.com/matyszm/filfinder)
-
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
